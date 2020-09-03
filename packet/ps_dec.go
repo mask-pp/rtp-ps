@@ -38,7 +38,7 @@ func (dec *DecPSPackage) decPackHeader(data []byte) ([][]byte, error) {
 		return nil, ErrNotFoundStartCode
 	}
 
-	if err := dec.Skip(4 + 9); err != nil {
+	if err := dec.Skip(9); err != nil {
 		return nil, err
 	}
 
