@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/mask-pp/streams/packet"
+	"github.com/mask-pp/rtp-ps/packet"
 	log "github.com/sirupsen/logrus"
 )
 
