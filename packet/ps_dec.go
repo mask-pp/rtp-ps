@@ -1,7 +1,7 @@
 package packet
 
 import (
-	"github.com/mask-pp/streams/buffer"
+	"github.com/mask-pp/rtp-ps/buffer"
 )
 
 /*
