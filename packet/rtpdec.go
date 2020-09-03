@@ -1,6 +1,6 @@
 package packet
 
-import "github.com/mask-pp/streams/buffer"
+import "github.com/mask-pp/rtp-ps/buffer"
 
 type RtpParsePacket struct {
 	*DecPSPackage
