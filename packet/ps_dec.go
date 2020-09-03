@@ -47,7 +47,9 @@ func (dec *DecPSPackage) decPackHeader(data []byte) ([][]byte, error) {
 		return nil, err
 	}
 	psl &= 0x07
-	dec.Skip(int(psl))
+	if err = dec.Skip(int(psl)); err != nil {
+		return nil, err
+	}
 
 	for {
 		nextStartCode, err := dec.Uint32()
